@@ -1,0 +1,48 @@
+.container-header{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5vw;
+
+    &--navbar{
+        display: none;
+    }
+
+    &--button button{
+        display: none;
+    }
+}
+
+@media (min-width: 1440px){
+
+    .container-header{
+        display: flex;
+        height: 20vh;
+        margin: 1vh 5vw 8vh 5vw;
+
+        &--navbar{
+            flex-grow: 0.2;
+            display: block;
+            display: flex;   
+            justify-content: space-evenly;
+
+            a{
+                text-decoration: none;
+            }
+        }
+
+        &--button{
+            img{
+                display: none;
+            }
+
+            button{
+                display: block;
+                @include button_desktop($bg_primary_desktop,$color_lighter_grey,$fw_light);
+            }
+        }
+    }
+}
+
+

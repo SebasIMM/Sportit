@@ -1,0 +1,18 @@
+// style
+@import './style/typography';
+@import './style/colors';
+@import './partials/mixim';
+
+// reset body
+@import './partials/reset';
+
+// body
+@import './partials/header';
+
+@import './partials/head';
+@import './partials/what-is';
+@import './partials/information';
+@import './partials/best-of';
+@import './partials/go-for';
+
+@import './partials/footer';

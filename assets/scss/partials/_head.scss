@@ -1,0 +1,65 @@
+.container-head {
+	display: flex;
+	justify-content: center;
+}
+
+.father-head {
+	width: 90vw;
+	display: flex;
+	flex-direction: column;
+	text-align: end;
+
+	img {
+		width: 100%;
+		align-self: center;
+		margin-top: 3vh;
+	}
+
+	h1 {
+		color: $color_dark_blue;
+		font-size: 3rem;
+		margin: 15vh 0 4vh 0;
+	}
+
+	p {
+		color: black;
+		font-weight: $fw-bold;
+		font-size: 1.08rem;
+		margin-bottom: 4vh;
+	}
+
+	button {
+		@include button($bg_primary_desktop, white, $fw_light);
+	}
+}
+
+.div_button {
+	margin-bottom: 7vh;
+}
+
+@media (min-width: 1440px) {
+	.father-head {
+		display: flex;
+		flex-direction: row;
+		width: 80%;
+        margin-bottom: 5vh;
+
+		&--text_column {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			h1,
+			p {
+				width: 80%;
+				align-self: end;
+				margin: 3vh 0;
+			}
+
+			button {
+				@include button_desktop($bg_primary_desktop, white, $fw_light);
+                margin-top: 3vh;
+            }
+		}
+	}
+}
