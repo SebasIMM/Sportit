@@ -30,7 +30,7 @@
 	}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 	.container-information {
 		background-color: $bg_primary_light_grey;
 		display: flex;
@@ -58,6 +58,7 @@
 
 		&--content {
 			margin: 1vh 1vw 0 18.2vw;
+			line-height: 1.6;
 		}
 	}
 }

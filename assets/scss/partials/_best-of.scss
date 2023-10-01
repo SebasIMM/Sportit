@@ -4,7 +4,7 @@
 
 	h2 {
 		color: $color_dark_blue;
-		font-size: 2rem;
+		font-size: 2.4rem;
 		margin-bottom: 14vh;
 	}
 
@@ -34,23 +34,24 @@
 	}
 
 	h5 {
-		color: $color_dark_bluegrey;
-		font-size: 1rem;
+		color: $color_dark_blue;
+		font-size: 1.3rem;
 		font-weight: $fw-bolder;
 	}
 
 	p {
-		color: $color_light_grey;
+		color: $color_dark_bluegrey;
 		padding: 3vh 0;
+		line-height: 1.6;
 	}
 }}
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 	.container-best-of {
 		margin: 11vh 0;
 		
 		button {
-			@include button_desktop($bg_primary_desktop, $color_lighter_grey, $fw_light);
+			@include button_desktop($bg_primary_desktop, white, $fw_light);
 		}
 	}
 

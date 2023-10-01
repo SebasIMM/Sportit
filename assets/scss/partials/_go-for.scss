@@ -16,7 +16,7 @@
 	}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 	.container-go-for {
 		background-color: $bg_primary_desktop;
 		display: flex;
@@ -33,7 +33,7 @@
 		button {
 			margin: 0;
 			padding: 0;
-			@include button_desktop(white, $color_light_grey, $fw_light);
+			@include button_desktop(white, $color_dark_blue, $fw_bold);
 		}
 	}
 }

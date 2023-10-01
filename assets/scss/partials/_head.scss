@@ -1,6 +1,7 @@
 .container-head {
 	display: flex;
 	justify-content: center;
+	height: 87vh;
 }
 
 .father-head {
@@ -37,7 +38,7 @@
 	margin-bottom: 7vh;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 	.father-head {
 		display: flex;
 		flex-direction: row;
@@ -47,7 +48,7 @@
 		&--text_column {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: end;
 
 			h1,
 			p {
