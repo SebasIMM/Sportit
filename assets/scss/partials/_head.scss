@@ -1,7 +1,6 @@
 .container-head {
 	display: flex;
 	justify-content: center;
-	height: 87vh;
 }
 
 .father-head {
@@ -39,11 +38,15 @@
 }
 
 @media (min-width: 1200px) {
+	.container-head {
+		height: 87vh;
+	}
+
 	.father-head {
 		display: flex;
 		flex-direction: row;
 		width: 80%;
-        margin-bottom: 5vh;
+		margin-bottom: 5vh;
 
 		&--text_column {
 			display: flex;
@@ -59,8 +62,8 @@
 
 			button {
 				@include button_desktop($bg_primary_desktop, white, $fw_light);
-                margin-top: 3vh;
-            }
+				margin-top: 3vh;
+			}
 		}
 	}
 }
